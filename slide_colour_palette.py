@@ -31,10 +31,10 @@ def save_thumbnail(slide_path, o, erase_background=True):
     """
 
 
-	filename = str(Path(slide_path).stem)
-	slide = OpenSlide(slide_path)
-	level = 5  # adjust to obtain a thumbnail size image
-	dims = slide.level_dimensions[level]
+    filename = str(Path(slide_path).stem)
+    slide = OpenSlide(slide_path)
+    level = 5  # adjust to obtain a thumbnail size image
+    dims = slide.level_dimensions[level]
     im = slide.get_thumbnail(dims)
 
     if erase_background:
