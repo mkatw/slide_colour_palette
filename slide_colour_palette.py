@@ -122,7 +122,7 @@ def plot_cohort_stain_distribution(thumbnails, dataset_name, stain):
     ax.set_xlabel('a*', fontsize=22)
     ax.set_ylabel('b*', fontsize=22)
     ax.set_zlabel('L*', fontsize=22)
-    ax.set_title(dataset_names[i],fontsize=24)
+    ax.set_title(dataset_name,fontsize=24)
 
     file_name = './plots/' + f'{dataset_name}_{stain}_background_erased_LAB.png'
     plt.savefig(file_name, dpi=None, facecolor='w', edgecolor='w',
